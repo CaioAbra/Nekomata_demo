@@ -1,0 +1,42 @@
+form#novaPostagem {
+    .card {
+        &.card-title-post {
+            @media screen and (min-width:1024px) {
+                height: clamp(20.079rem, 100%, 100%);
+            }
+        }
+
+        input[type=file]#thumb_postagem {
+            &+label {
+
+                height: auto !important;
+                border-bottom-left-radius: 0 !important;
+                border-bottom-right-radius: 0 !important;
+            }
+
+            $custom-file-text: (
+                en: "Browse",
+                es: "Elegir",
+                pt-br:"Navegar"
+            );
+    }
+
+    #preview_thumb_postagem {
+        width: 100%;
+    }
+
+    &.thumb_postagem {
+        @media screen and (min-width:1024px) {
+            height: clamp(25rem, 100%, 100%);
+        }
+    }
+
+    &.criadorPostagem {
+        @media screen and (min-width:1024px) {
+            height: clamp(8rem, 100%, 100%);
+        }
+    }
+}
+
+
+}

@@ -1,0 +1,24 @@
+// imports
+@import "optimize";
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    max-width: 100vw;
+    min-height: 100vh;
+    -webkit-text-size-adjust: 100%;
+    font-family: $fonte-padrao-body !important;
+    background-color: var(--body-color) !important;
+}

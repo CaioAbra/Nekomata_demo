@@ -1,0 +1,407 @@
+@font-face {
+  font-family: "BwModelica-Black";
+  src: url("./../fonts/BwModelica/BwModelica-Black.otf");
+}
+@font-face {
+  font-family: "BwModelica-BlackItalic";
+  src: url("./../fonts/BwModelica/BwModelica-BlackItalic.otf");
+}
+@font-face {
+  font-family: "BwModelica-Bold";
+  src: url("./../fonts/BwModelica/BwModelica-Bold.otf");
+}
+@font-face {
+  font-family: "BwModelica-BoldItalic";
+  src: url("./../fonts/BwModelica/BwModelica-BoldItalic.otf");
+}
+@font-face {
+  font-family: "BwModelica-ExtraBold";
+  src: url("./../fonts/BwModelica/BwModelica-ExtraBold.otf");
+}
+@font-face {
+  font-family: "BwModelica-ExtraBoldItalic";
+  src: url("./../fonts/BwModelica/BwModelica-ExtraBoldItalic.otf");
+}
+@font-face {
+  font-family: "BwModelica-Hairline";
+  src: url("./../fonts/BwModelica/BwModelica-Hairline.otf");
+}
+@font-face {
+  font-family: "BwModelica-HairlineItalic";
+  src: url("./../fonts/BwModelica/BwModelica-HairlineItalic.otf");
+}
+@font-face {
+  font-family: "BwModelica-Light";
+  src: url("./../fonts/BwModelica/BwModelica-Light.otf");
+}
+@font-face {
+  font-family: "BwModelica-LightItalic";
+  src: url("./../fonts/BwModelica/BwModelica-LightItalic.otf");
+}
+@font-face {
+  font-family: "BwModelica-Medium";
+  src: url("./../fonts/BwModelica/BwModelica-Medium.otf");
+}
+@font-face {
+  font-family: "BwModelica-MediumItalic";
+  src: url("./../fonts/BwModelica/BwModelica-MediumItalic.otf");
+}
+@font-face {
+  font-family: "BwModelica-Regular";
+  src: url("./../fonts/BwModelica/BwModelica-Regular.otf");
+}
+@font-face {
+  font-family: "BwModelica-RegularItalic";
+  src: url("./../fonts/BwModelica/BwModelica-RegularItalic.otf");
+}
+@font-face {
+  font-family: "BwModelica-Thin";
+  src: url("./../fonts/BwModelica/BwModelica-Thin.otf");
+}
+@font-face {
+  font-family: "BwModelica-ThinItalic";
+  src: url("./../fonts/BwModelica/BwModelica-ThinItalic.otf");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "BwModelica-Bold";
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+small {
+  font-family: "BwModelica-Light" !important;
+  margin-top: 0.2rem;
+}
+
+:root {
+  --Cores-Base---Quietude-1: #020426;
+  --Cores-Base---Quietude-2: #0F2F59;
+  --Cores-Base---Quietude-3: #0478A6;
+  --Cores-Base---Quietude-4: #07C4D9;
+  --Cores-Base---Quietude-5: #07F2F2;
+  --Cores-complementares-input: #3C628C;
+  --body-color: #ededed;
+}
+
+form.login div.form-group {
+  position: relative;
+  margin-bottom: 3rem;
+}
+form.login div.form-group label {
+  position: absolute;
+  margin-bottom: 0rem;
+  padding: 0.45rem 0.9375rem 0.45rem 0.9375rem;
+  transition: all 0.5s;
+}
+form.login div.form-group label.focused {
+  margin-top: -1.25rem;
+  font-size: 0.7rem;
+}
+form.login div.form-group input {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 0.125rem solid var(--Cores-complementares-input);
+  transition: all 0.5s;
+}
+form.login div.form-group input:focus {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  border-bottom: 0.125rem solid var(--Cores-Base---Quietude-5);
+}
+form.login div.form-group input:focus + div.input-group-append > button.btn-outline-secondary {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 0.125rem solid var(--Cores-Base---Quietude-5);
+}
+form.login div.form-group input:focus + div.input-group-append > button.btn-outline-secondary:focus {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 0.125rem solid var(--Cores-complementares-input);
+}
+form.login div.form-group input + div.input-group-append > button.btn-outline-secondary {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 0.125rem solid var(--Cores-complementares-input);
+  transition: all 0.5s;
+}
+form.login div.form-group input + div.input-group-append > button.btn-outline-secondary:focus {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 0.125rem solid var(--Cores-complementares-input);
+}
+form.login div.form-group input + div.input-group-append > button.btn-outline-secondary > img {
+  height: 1.25rem;
+}
+form.login button[type=submit] {
+  background-color: var(--Cores-complementares-input);
+  color: var(--Cores-Base---Quietude-5);
+  font-weight: 500;
+  transition: all 0.5s;
+}
+form.login button[type=submit]:hover {
+  background-color: var(--Cores-Base---Quietude-5);
+  color: var(--Cores-complementares-input);
+}
+
+@media screen and (min-width: 1024px) {
+  form#novaPostagem .card.card-title-post {
+    height: clamp(20.079rem, 100%, 100%);
+  }
+}
+form#novaPostagem .card input[type=file]#thumb_postagem + label {
+  height: auto !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+form#novaPostagem .card #preview_thumb_postagem {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  form#novaPostagem .card.thumb_postagem {
+    height: clamp(25rem, 100%, 100%);
+  }
+}
+@media screen and (min-width: 1024px) {
+  form#novaPostagem .card.criadorPostagem {
+    height: clamp(8rem, 100%, 100%);
+  }
+}
+
+header {
+  display: flex !important;
+  align-items: center;
+  height: 7vh;
+  background-color: var(--Cores-Base---Quietude-2);
+  margin-bottom: 12vh;
+}
+header a.logoTipo {
+  font-size: 1.52em;
+  color: var(--Cores-Base---Quietude-4);
+  transition: all 0.5s;
+}
+header a.logoTipo:visited, header a.logoTipo:checked {
+  text-decoration: none;
+  color: var(--Cores-Base---Quietude-4);
+}
+header a.logoTipo:hover {
+  text-decoration: none;
+  color: var(--Cores-Base---Quietude-5);
+  text-shadow: 0.0625rem 0rem 0.5rem var(--Cores-Base---Quietude-5);
+}
+
+nav {
+  display: flex !important;
+  align-items: center;
+  background-color: var(--Cores-Base---Quietude-2);
+  margin-bottom: 2vh;
+}
+nav li.nav-item {
+  margin-left: 1rem;
+}
+nav li.nav-item.dropdown.show a.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.125rem;
+  bottom: 0;
+  left: 0;
+  background-color: var(--Cores-Base---Quietude-5);
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+nav li.nav-item.dropdown:hover > ul.dropdown-menu {
+  display: block;
+}
+nav li.nav-item.dropdown ul.dropdown-menu {
+  padding: 0 !important;
+  border-color: var(--Cores-Base---Quietude-5);
+}
+nav li.nav-item.dropdown ul.dropdown-menu li {
+  background-color: var(--Cores-Base---Quietude-2);
+}
+nav li.nav-item.dropdown ul.dropdown-menu li:first-child {
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+}
+nav li.nav-item.dropdown ul.dropdown-menu li:last-child {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+nav li.nav-item.dropdown ul.dropdown-menu li a {
+  color: var(--Cores-Base---Quietude-4);
+  transition: all 0.5s ease-in-out 0s;
+}
+nav li.nav-item.dropdown ul.dropdown-menu li a:hover {
+  color: var(--Cores-Base---Quietude-5);
+  background-color: var(--Cores-Base---Quietude-2);
+  padding: 0.25rem 0rem 0.25rem 2.25rem !important;
+}
+nav li.nav-item.dropdown ul.dropdown-menu li hr {
+  margin: 0 !important;
+  border-top: 1px solid var(--Cores-Base---Quietude-5);
+}
+nav li.nav-item > a.nav-link {
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  color: var(--Cores-Base---Quietude-4);
+}
+nav li.nav-item > a.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.125rem;
+  bottom: 0;
+  left: 0;
+  background-color: var(--Cores-Base---Quietude-5);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+nav li.nav-item > a.nav-link:hover {
+  color: var(--Cores-Base---Quietude-5);
+}
+nav li.nav-item > a.nav-link:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+nav a.logoTipo {
+  font-size: 1.52em;
+  color: var(--Cores-Base---Quietude-4);
+  transition: all 0.5s;
+}
+nav a.logoTipo:visited, nav a.logoTipo:checked {
+  text-decoration: none;
+  color: var(--Cores-Base---Quietude-4);
+}
+nav a.logoTipo:hover {
+  text-decoration: none;
+  color: var(--Cores-Base---Quietude-5);
+  text-shadow: 0.0625rem 0rem 0.5rem var(--Cores-Base---Quietude-5);
+}
+nav ul.navbar-nav {
+  margin-left: auto;
+  margin-right: 0 !important;
+}
+
+@font-face {
+  font-family: "BwModelica-Black";
+  src: url("./../fonts/BwModelica/BwModelica-Black.otf");
+}
+@font-face {
+  font-family: "BwModelica-BlackItalic";
+  src: url("./../fonts/BwModelica/BwModelica-BlackItalic.otf");
+}
+@font-face {
+  font-family: "BwModelica-Bold";
+  src: url("./../fonts/BwModelica/BwModelica-Bold.otf");
+}
+@font-face {
+  font-family: "BwModelica-BoldItalic";
+  src: url("./../fonts/BwModelica/BwModelica-BoldItalic.otf");
+}
+@font-face {
+  font-family: "BwModelica-ExtraBold";
+  src: url("./../fonts/BwModelica/BwModelica-ExtraBold.otf");
+}
+@font-face {
+  font-family: "BwModelica-ExtraBoldItalic";
+  src: url("./../fonts/BwModelica/BwModelica-ExtraBoldItalic.otf");
+}
+@font-face {
+  font-family: "BwModelica-Hairline";
+  src: url("./../fonts/BwModelica/BwModelica-Hairline.otf");
+}
+@font-face {
+  font-family: "BwModelica-HairlineItalic";
+  src: url("./../fonts/BwModelica/BwModelica-HairlineItalic.otf");
+}
+@font-face {
+  font-family: "BwModelica-Light";
+  src: url("./../fonts/BwModelica/BwModelica-Light.otf");
+}
+@font-face {
+  font-family: "BwModelica-LightItalic";
+  src: url("./../fonts/BwModelica/BwModelica-LightItalic.otf");
+}
+@font-face {
+  font-family: "BwModelica-Medium";
+  src: url("./../fonts/BwModelica/BwModelica-Medium.otf");
+}
+@font-face {
+  font-family: "BwModelica-MediumItalic";
+  src: url("./../fonts/BwModelica/BwModelica-MediumItalic.otf");
+}
+@font-face {
+  font-family: "BwModelica-Regular";
+  src: url("./../fonts/BwModelica/BwModelica-Regular.otf");
+}
+@font-face {
+  font-family: "BwModelica-RegularItalic";
+  src: url("./../fonts/BwModelica/BwModelica-RegularItalic.otf");
+}
+@font-face {
+  font-family: "BwModelica-Thin";
+  src: url("./../fonts/BwModelica/BwModelica-Thin.otf");
+}
+@font-face {
+  font-family: "BwModelica-ThinItalic";
+  src: url("./../fonts/BwModelica/BwModelica-ThinItalic.otf");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "BwModelica-Bold";
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+small {
+  font-family: "BwModelica-Light" !important;
+  margin-top: 0.2rem;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  -webkit-text-size-adjust: 100%;
+  font-family: "BwModelica-Medium" !important;
+  background-color: var(--body-color) !important;
+}
+
+/*# sourceMappingURL=style.css.map */

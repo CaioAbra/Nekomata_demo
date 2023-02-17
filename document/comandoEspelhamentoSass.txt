@@ -1,0 +1,1 @@
+sass --watch D:\wamp64\www\Nekomata\public\assets\sass\index.scss D:\wamp64\www\Nekomata\public\assets\css\style.css

@@ -1,0 +1,85 @@
+form.login {
+    div.form-group {
+        position: relative;
+        margin-bottom: 3rem;
+
+        label {
+            position: absolute;
+            margin-bottom: 0rem;
+            padding: 0.45rem 0.9375rem 0.45rem 0.9375rem;
+            transition: all .5s;
+
+            &.focused {
+                margin-top: -1.25rem;
+                font-size: .7rem;
+            }
+        }
+
+        input {
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+            border-bottom: .125rem solid var(--Cores-complementares-input);
+            transition: all .5s;
+
+            &:focus {
+                border: none;
+                box-shadow: none;
+                border-radius: 0;
+                border-bottom: .125rem solid var(--Cores-Base---Quietude-5);
+
+                &+div.input-group-append {
+                    &>button.btn-outline-secondary {
+                        background-color: transparent;
+                        border: none;
+                        border-radius: 0;
+                        border-bottom: .125rem solid var(--Cores-Base---Quietude-5);
+
+                        &:focus {
+                            background-color: transparent;
+                            border: none;
+                            border-radius: 0;
+                            box-shadow: none;
+                            border-bottom: .125rem solid var(--Cores-complementares-input);
+                        }
+                    }
+                }
+            }
+
+            &+div.input-group-append {
+                &>button.btn-outline-secondary {
+                    background-color: transparent;
+                    border: none;
+                    border-radius: 0;
+                    border-bottom: .125rem solid var(--Cores-complementares-input);
+                    transition: all .5s;
+
+                    &:focus {
+                        background-color: transparent;
+                        border: none;
+                        border-radius: 0;
+                        box-shadow: none;
+                        border-bottom: .125rem solid var(--Cores-complementares-input);
+
+                    }
+
+                    &>img {
+                        height: 1.25rem
+                    }
+                }
+            }
+        }
+    }
+
+    button[type="submit"] {
+        background-color: var(--Cores-complementares-input);
+        color: var(--Cores-Base---Quietude-5);
+        font-weight: 500;
+        transition: all .5s;
+
+        &:hover {
+            background-color: var(--Cores-Base---Quietude-5);
+            color: var(--Cores-complementares-input);
+        }
+    }
+}

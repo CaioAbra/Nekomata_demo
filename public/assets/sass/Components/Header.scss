@@ -1,0 +1,25 @@
+header {
+    display: flex !important;
+    align-items: center;
+    height: 7vh;
+    background-color: var(--Cores-Base---Quietude-2);
+    margin-bottom: 12vh;
+
+    a.logoTipo {
+        font-size: 1.52em;
+        color: var(--Cores-Base---Quietude-4);
+        transition: all .5s;
+
+        &:visited,
+        &:checked {
+            text-decoration: none;
+            color: var(--Cores-Base---Quietude-4);
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: var(--Cores-Base---Quietude-5);
+            text-shadow: .0625rem 0rem .5rem var(--Cores-Base---Quietude-5);
+        }
+    }
+}
